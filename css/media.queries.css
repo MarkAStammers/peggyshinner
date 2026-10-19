@@ -1,0 +1,59 @@
+/*
+=Media Queries
+=Updated: 26.10.03 */
+
+/*
+=small & below
+============================================= */
+@media (max-width: 767.98px) {
+.pge-wrapper  { padding: 0 3rem 3rem; }
+.inn-wrapper  { padding: 0 3rem; }
+}
+
+/*
+=medium & above
+============================================= */
+@media (min-width: 768px) {
+.pge-wrapper  { padding: 0 6.5rem 4rem; }
+.inn-wrapper  { padding: 0 6.5rem; }
+}
+
+/*
+=large & above
+============================================= */
+@media (min-width: 992px) {
+.pge-wrapper  { padding: 0 10rem 5rem; }
+.inn-wrapper  { padding: 0 10rem; }
+}
+
+/* ========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

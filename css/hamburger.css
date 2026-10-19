@@ -1,0 +1,81 @@
+/*
+Hamburger
+Updated= 26.10.03 */
+
+/*
+=Hamburger Checkbox
+============================================= */
+.nav-toggle {
+ display: none;
+}
+
+/*
+=Hamburger Container
+============================================= */
+.hamburger {
+ display: none;
+ justify-content: center;
+ align-items: center;
+ width: 26px;
+ height: 26px;
+ padding: 4px;
+ cursor: pointer;
+}
+/*
+=medium & below */
+@media (max-width: 991.98px) {
+.hamburger {
+ display: flex;
+ transform: translate(0.4rem, 1rem);
+ z-index: 10;
+}
+}
+
+/*
+=Hamburger Lines
+============================================= */
+.hamburger .line,
+.hamburger .line::before,
+.hamburger .line::after {
+ background-color: var(--gray-medium);
+ width: 100%;
+ height: 0.2rem;
+ transition: background-color 0.5s ease;
+}
+.hamburger .line {
+ position: relative;
+ transition: transform 0.5s ease;
+}
+.hamburger .line::before,
+.hamburger .line::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.hamburger .line::before { transform: translateY(-0.5rem); }
+.hamburger .line::after  { transform: translateY( 0.5rem); }
+
+.nav-toggle:checked + .hamburger .line {
+ transform: rotate(135deg);
+}
+.nav-toggle:checked:hover + .hamburger .line {
+ transform: rotate(225deg); /* add further rotation on hover when checked */
+}
+.nav-toggle:checked + .hamburger .line::before,
+.nav-toggle:checked + .hamburger .line::after {
+ transform: rotate(90deg); /* replace the earlier translateY() transform with rotate(90deg) to form an X */
+}
+.nav-toggle:checked + .hamburger .line::after {
+ opacity: 0;
+}
+
+/* ========================================== */
+
+
+
+
+
+
+
+

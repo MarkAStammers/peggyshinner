@@ -1,0 +1,162 @@
+/*
+=Modal Overlay
+=Updated: 26.09.06 */
+
+/*
+Modal Control (Checkbox)
+============================================= */
+.modal-control {
+ position: absolute;
+ opacity: 0;
+ pointer-events: none;
+}
+
+/*
+Modal Trigger (Button)
+============================================= */
+.modal-trigger {
+ background-color: rgb(246 249 255);
+ color: var(--gray-dark);
+ font-weight: 600;
+ font-size: 1.45rem;
+ text-transform: uppercase;
+ text-align: center;
+ letter-spacing: 0.25rem;
+
+ margin: 4rem auto 0;
+ border: 0.2rem solid var(--orange-light);
+ padding: 1.2rem 5rem;
+
+ transition: color var(--trans-fast), border-color var(--trans-fast);
+ cursor: pointer;
+}
+@media (max-width: 575.98px) {
+ .modal-trigger {
+  width: 100%;
+ }
+}
+@media (max-width: 991.98px) {
+ .modal-trigger {
+  font-size: 1.4rem;
+ }
+}
+.modal-trigger:hover {
+ color: var(--orange-dark);
+ border-color: var(--gray-x-light);
+}
+
+/*
+Modal Overlay
+============================================= */
+.modal-overlay {
+ background-color: rgb(0 0 0 / 0.75);
+ position: fixed;
+ inset: 0;
+ z-index: 20;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ transition: opacity var(--trans-medium);
+ opacity: 0;
+ pointer-events: none;
+}
+.modal-control:checked ~ .modal-overlay {
+ opacity: 1;
+ pointer-events: auto;
+}
+
+/*
+Modal Close
+============================================= */
+.modal-close {
+ position: absolute;
+ inset: 0;
+ cursor: pointer;
+}
+
+/* 
+=Modal Content
+============================================= */
+.modal-content {
+ background-color: rgb(240 244 255);
+ width: 100%;
+ max-width: 51rem;
+ margin: 0 3rem;
+ padding: 6rem 3rem;
+ padding: 4.5rem 3rem;
+ z-index: 1;
+}
+.modal-control:checked ~ .modal-overlay .modal-content {
+ animation: ease-up var(--trans-medium);
+}
+@keyframes ease-up {
+ from { transform: translateY(4rem) scale(0.5); }
+ to   { transform: translateY(0)    scale(1); }
+}
+
+/* 
+=Modal Content Links
+============================================= */
+.modal-content a {
+ font-weight: 500;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+ 
+ display: block;
+ padding: 1.25rem 0;
+ position: relative; /* create a new positioning context for positioning the pseudo elements */
+ transition: background-size var(--trans-fast), color var(--trans-fast); 
+
+ background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
+ background-size: 100% 0.1rem; /* width, height */
+ background-position: 0 100%; /* x, y */
+ background-repeat: no-repeat;
+}
+/*
+=top rule on first link */
+.modal-content li:nth-child(1) a::before {
+ content: "";
+ width: 100%;
+ height: 0.1rem;
+
+ position: absolute;
+ left: 0;
+ top: 0;
+
+ background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
+ background-size: 100% 0.1rem;
+ background-repeat: no-repeat;
+}
+/*
+=animated orange underline */
+.modal-content a::after {
+ content: "";
+ width: 100%;
+ height: 0.1rem;
+
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ transition: background-size var(--trans-medium);
+
+ background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
+ background-size: 0 0.1rem;
+ background-repeat: no-repeat;
+}
+.modal-content a:hover::after {
+ background-size: 100% 0.1rem;
+}
+
+/* ========================================== */
+
+
+
+
+
+
+
+
+

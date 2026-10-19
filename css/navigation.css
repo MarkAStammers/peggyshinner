@@ -1,0 +1,166 @@
+/*
+Navigation
+Updated= 26.10.03 */
+
+/*
+Navigation
+********************************************* */
+/* 
+=Nav Container
+============================================= */
+nav {
+ font-weight: 500;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+ transform: translateY(1.15rem);
+}
+
+/* 
+=Menu + Menu Items
+============================================= */
+.menu {
+ display: flex;
+}
+.menu__item {
+ margin: 0 2rem;
+}
+.menu__item:last-child {
+ margin-right: 0;
+}
+
+/* 
+=Menu Links
+============================================= */
+.menu a {
+ display: block;
+ padding: 0.4rem 0 1.5rem;
+ transition: background-size var(--trans-fast), color var(--trans-fast); 
+
+ background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
+ background-size: 0 0.1rem; /* width, height */
+ background-position: 0 75%; /* x, y */
+ background-repeat: no-repeat;
+}
+.menu a:hover,
+.menu a.current-page {
+ background-size: 97.5% 0.1rem;
+}
+
+/*
+Navigation > Medium & Below
+********************************************* */
+@media (max-width: 991.98px) {
+/* 
+=Nav Container
+============================================= */
+nav {
+ background-color: var(--blue-x-light-90);
+ width: 30rem;
+ 
+ position: fixed;
+ inset: 0 -30rem 0 auto;
+ 
+ opacity: 0;
+ transform: none;
+ transition: right var(--trans-medium), opacity var(--trans-medium);
+}
+.nav-toggle:checked ~ nav {
+ right: 0;
+ opacity: 1;
+}
+
+/* 
+=Menu + Menu Items
+============================================= */
+.menu {
+ flex-direction: column;
+ justify-content: center;
+ min-height: 100vh;
+}
+.menu__item {
+ margin: 0 3rem;
+ transform: translateX(5rem);
+ transition: transform var(--trans-slow);
+}
+.nav-toggle:checked ~ nav .menu__item {
+ transform: translateX(0);
+}
+.menu__item:nth-child(1) { transition-delay:   0ms; }
+.menu__item:nth-child(2) { transition-delay:  50ms; }
+.menu__item:nth-child(3) { transition-delay: 100ms; }
+.menu__item:nth-child(4) { transition-delay: 150ms; }
+.menu__item:nth-child(5) { transition-delay: 200ms; }
+.menu__item:nth-child(6) { transition-delay: 250ms; }
+
+.menu__item:last-child   { margin-right: 3rem; }
+
+/* 
+=Menu Links
+============================================= */
+.menu a {
+ font-size: 1.2rem;
+ padding: 1.25rem 0;
+ position: relative;
+
+ background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
+ background-size: 100% 0.1rem; /* width, height */
+ background-position: 0 100%; /* x, y */
+ background-repeat: no-repeat;
+}
+/*
+=shared pseudo-element properties */
+.menu__item:nth-child(1) a::before,
+.menu a::after {
+ content: "";
+ width: 100%;
+ height: 0.1rem;
+
+ position: absolute;
+ left: 0;
+
+ background-repeat: no-repeat;
+}
+/*
+=top rule */
+.menu__item:nth-child(1) a::before {
+ top: 0;
+
+ background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
+ background-size: 100% 0.1rem;
+}
+/*
+=animated underline */
+.menu a::after {
+ bottom: 0;
+ transition: background-size var(--trans-medium);
+
+ background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
+ background-size: 0 0.1rem;
+}
+.menu a:hover::after,
+.menu a.current-page::after {
+ background-size: 100% 0.1rem;
+}
+} 
+
+/* ========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
