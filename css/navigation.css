@@ -38,12 +38,12 @@ nav {
  transition: background-size var(--trans-fast), color var(--trans-fast); 
 
  background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
- background-size: 0 0.1rem; /* width, height */
- background-position: 0 75%; /* x, y */
+ background-position: 0 75%; /* x y */
+ background-size: 0 0.1rem; /* width height */
  background-repeat: no-repeat;
 }
 .menu a:hover,
-.menu a.current-page {
+.menu a.active {
  background-size: 97.5% 0.1rem;
 }
 
@@ -104,8 +104,8 @@ nav {
  position: relative;
 
  background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
- background-size: 100% 0.1rem; /* width, height */
  background-position: 0 100%; /* x, y */
+ background-size: 100% 0.1rem; /* width, height */
  background-repeat: no-repeat;
 }
 /*

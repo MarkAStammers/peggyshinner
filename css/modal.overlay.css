@@ -108,11 +108,10 @@ Modal Close
  display: block;
  padding: 1.25rem 0;
  position: relative; /* create a new positioning context for positioning the pseudo elements */
- transition: background-size var(--trans-fast), color var(--trans-fast); 
 
  background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
- background-size: 100% 0.1rem; /* width, height */
- background-position: 0 100%; /* x, y */
+ background-position: 0 100%; /* x y */
+ background-size: 100% 0.1rem; /* width height */
  background-repeat: no-repeat;
 }
 /*
@@ -123,8 +122,8 @@ Modal Close
  height: 0.1rem;
 
  position: absolute;
- left: 0;
  top: 0;
+ left: 0;
 
  background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
  background-size: 100% 0.1rem;
@@ -138,9 +137,8 @@ Modal Close
  height: 0.1rem;
 
  position: absolute;
- left: 0;
- bottom: 0;
- transition: background-size var(--trans-medium);
+ inset: auto auto 0 0;
+ transition: background-size var(--trans-slow);
 
  background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
  background-size: 0 0.1rem;
