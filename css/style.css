@@ -438,19 +438,18 @@ body {
 
  background-image: linear-gradient(var(--gray-xx-light), var(--gray-xx-light));
  background-position: 0 bottom; /* x y */
- background-size: 99% 0.1rem; /* width height */
+ background-size: 100% 0.1rem; /* width height */ /* updated 26.11.09 */
  background-repeat: no-repeat;
 }
 /*
 =animated orange underline */
 .events .event-name a::after {
  content: "";
- width: 99%;
+ width: 100%; /* updated 26.11.09 */
  height: 0.1rem;
 
  position: absolute;
- left: 0;
- bottom: 0;
+ inset: auto auto 0 0; /* updated 26.11.09 */
  transition: background-size var(--trans-medium);
  
  background-image: linear-gradient(var(--orange-dark), var(--orange-dark));
