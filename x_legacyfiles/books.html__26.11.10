@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- META DATA -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- PAGE TITLE -->
+		<title>Peggy Shinner, Books</title>
+	
+		<!-- PAGE LINKS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.queries.css">
+		<link rel="stylesheet" href="css/hamburger.css">
+		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="css/modal.overlay.css">
+
+		<!-- AVENIR NEXT -->
+		<link rel="stylesheet" href="https://use.typekit.net/jyl5xok.css">
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+	
+			<!-- INNER WRAPPER -->
+			<div class="inn-wrapper">
+		
+				<!-- PEGGY SHINNER -->
+				<h1 class="head-1"><a href="index.html">Peggy Shinner</a></h1>
+		
+				<!-- HAMBURGER -->
+				<input id="hamburger" type="checkbox" class="nav-toggle">
+				<label for="hamburger" class="hamburger">
+					<span class="line"></span>
+				</label>
+		
+				<!-- NAVIGATION -->
+				<nav>
+					<ul class="menu">
+						<li class="menu__item"><a href="index.html">Home</a></li>
+						<li class="menu__item"><a href="#" class="active">Books</a></li>
+						<li class="menu__item"><a href="about.html">About</a></li>
+						<li class="menu__item"><a href="events.html">Events</a></li>
+						<li class="menu__item"><a href="news.html">News</a></li>
+						<li class="menu__item"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- END Inner Wrapper -->
+		</header>
+
+		<!-- IMAGE BANNER -->
+		<figure class="img-banner a-sinking-ship"></figure>
+		
+		<!-- PAGE WRAPPER -->
+		<div class="pge-wrapper mh-adjust">
+
+			<!-- MAIN CONTENTS -->
+			<main class="books">
+	
+				<!-- PAGE HEADING -->
+				<h2 class="head-2">Books</h2>
+	
+				<!-- SHAMEWRECK -->
+				<section class="shamewk">
+					<div class="f-container">
+
+						<!-- BOOK COVER -->
+						<div class="col-2">
+							<figure class="img-wrapper">
+								<img src="images/shamewreck.jpg" alt="">
+							</figure>
+
+							<!-- CHECKBOX -->
+							<input id="modal-control" type="checkbox" class="modal-control">
+							
+							<!-- ORDER HERE BUTTON -->
+							<label for="modal-control" class="modal-trigger">Order Here</label>
+							
+							<!-- MODAL OVERLAY -->
+							<div class="modal-overlay">
+							
+								<!-- CLOSE AREA -->
+								<label for="modal-control" class="modal-close"></label> <!-- close the interaction layer (click background to close modal) -->
+							
+								<!-- CONTENT -->
+								<ul class="modal-content">
+									<li class=""><a href="https://ohiostatepress.org/books/titles/9780814260043.html" target="blank">Ohio State University Press</a></li>
+									<li class=""><a href="https://bookshop.org/beta-search?bkshp-astro=t&keywords=shamewreck" target="blank">Bookshop.org</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- SYNOPSIS -->
+						<div class="col-2">
+							<h3 class="head-3 mt-adjust">Shamewreck</h3>
+							<p>In <span class="italic">Shamewreck</span>, Peggy Shinner interrogates the entanglement of shame and language, casting shame as a moral force, a conscience-beast, an umpire, the fellow who awaits when you come home.</p>
+							<p>These essays grapple with the nuclear bombing of Bikini Atoll and the emergence, four days later, of the bikini in Paris; the link between property and personhood and what it means to die without possessions; the mutability of language and how shamefaced once meant modest and bashful, before morphing into its opposite, abashed and ashamed; how talkative women were thought to be sloppy women, like Eve loose of mouth and morals; how occupation once meant heterosexual intercourse and now means military invasion.</p>
+							<p>Parsing dark undercurrents of popular culture alongside her own experiences as a queer woman, Shinner exhorts us to abandon willful unseeing and consider the legacies of language.  Take a look, she urges, you can buy a new car in twenty-first century America and for your money get two masters and a slave key. <span class="italic">Shamewreck</span> complicates our notions of shame and shamelessness and rescues them from the refuse pile, reclaiming shame as a potent moral adjudicator.</p>
+						</div>
+					</div>
+	
+					<!-- PRAISE FOR SHAMEWRECK -->
+					<h3 class="head-3">Praise for <span class="italic">Shamewreck</span></h3>
+
+					<!-- BARRIE JEAN BORICH -->
+					<blockquote class="rule-below">
+						<p>“When Peggy Shinner asks, ‘Can we not have words?’ she has no intention of giving up on language. <span class="fs-normal">Bikini. Occupy. Lesbianism. Apology.</span> Words and their archives are the girders of this collection — essays as gorgeous idiom excavations, language as keys to systems that forbid and sometimes liberate. Shinner’s stunning etymologies accrete into stories and analyses that revise the unseen and rebuild from the variants, in the process transforming the wreck of shame into a navigable morality that might just keep us afloat.”</p>
+						<ul>
+							<li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Barrie Jean Borich</span>, author of <span class="italic">Apocalypse, Darling</span></li>
+						</ul>
+					</blockquote>
+	
+					<!-- MILES HARVEY -->
+					<blockquote class="rule-below">
+						<p>“A literary acrobat, Peggy Shinner juggles memoir and social criticism, tossing seemingly unrelated ideas in the air like flaming torches. The thrill comes in watching them spin. Obsessed with hidden meanings of words, Shinner is also a keen observer of silences, especially her own unspoken apologies to a long-dead mother. At turns mournful, meditative, angry, and electrifying, <span class="fs-normal">Shamewreck</span> is a wonder of a book.”</p>
+						<ul>
+							<li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Miles Harvey</span>, author of <span class="italic">The Registry of Forgotten Objects</span></li>
+						</ul>
+					</blockquote>
+				</section>
+
+				<!-- YOU FEEL SO MORTAL -->
+				<section class="youfeel">
+					<div class="f-container">
+
+						<!-- BOOK COVER -->
+						<div class="col-2">
+							<figure class="img-wrapper"><img src="images/you-feel-so-mortal.jpg" alt=""></figure>
+						</div>
+
+						<!-- SYNOPSIS -->
+						<div class="col-2">
+							<h3 class="head-3 mt-adjust">You Feel So Mortal</h3>
+							<p>Feet, bras, autopsies, hair. <span class="italic">You Feel So Mortal</span> is a collection of essays about the body. It looks at the author’s own body, female and Jewish; her parents, the bodies she came from; the collective body, with all the social and political forces it brings to bear. “Family Feet” examines feet through the often-skewed lens of history, and discovers that the author’s flat-footed specimens are, according to some, decidedly and disturbingly Jewish. “The Fitting(s)” considers bras, breasts, and the storied bra fitter. “Postmortem,” an essay about autopsies, asks, from a grieving daughter’s point of view, what it means to cut the body open. “Berenice’s Hair,” a time-trip through myth, culture, and history, looks at women’s hair in ancient Rome, France, Laos, Syria, Cuba, India, and the author’s own past as well. </p>
+							<p>Over the course of twelve essays, Shinner holds a mirror up to the complex desires, fears, confusions, and mysteries that shape our bodily perceptions. Some of the pieces examine the disposition of the body under emotional or physical duress; others look at it as transgressive, and transgressed. There are 206 bones in the human body, 29 in the skull alone. Ten major organ systems. Toss in the soul, which Descartes said resided in the brain while some of his fellow Frenchmen opted for the liver. What does the whole mess mean?</p>
+						</div>
+					</div>
+
+					<!-- PRAISE FOR YOU FEEL SO MORTAL-->
+					<h3 class="head-3">Praise for <span class="italic">You Feel So Mortal</span></h3>
+
+					<!-- ROSELLEN BROWN -->
+					<blockquote class="rule-below">
+						<p>“Peggy Shinner writes with self-critical candor and an often rueful wit to combine the intimate with the historical, the deeply private with the Google-able in an engaging, endearing, and wholly unexpected way. This is not a memoir, but we get to know her very well; we emerge feeling we’ve watched a woman grow up and learn some important things about the reach and the limits of her needs and her daring. And, as in the best writing, we thereby discover a great deal that pertains to us.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Rosellen Brown</span>, author of <span class="italic">Half a Heart</span></li></ul>
+					</blockquote>
+	
+					<!-- ALEKSANDAR HEMON -->
+					<blockquote class="rule-below">
+						<p>“Shinner is a witty and insightful storyteller and brilliant thinker, attentive to the ways the body shapes up in your mind and the world. You Feel So Mortal makes you feel so alive.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Aleksandar Hemon</span>, author of <span class="italic">The Lazarus Project</span></li></ul>
+					</blockquote>
+	
+					<!-- MICHAEL MARTONE -->
+					<blockquote class="rule-below">
+						<p>“Like the transparent pages of fine anatomy books that peel apart the strata of the body, the nested essays in Shinner’s You Feel So Mortal get under our skins. She excavates, in spades, the indicative and intricate nature of our layered and larded corporeal selves. Lyrically adept, she effortlessly reanimates Schwartz’s heavy bear, making the big beast of the body dance the horah, turning the ‘withness’ of our heft into a helium meringue, a gauzy heartache, a lost lost.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Michael Martone</span>, author of <span class="italic">Four For a Quarter</span></li></ul>
+					</blockquote>
+
+					<!-- CHRISTINE SNEED -->
+					<blockquote class="rule-below">
+						<p>“You Feel So Mortal is a book I found nearly impossible to put down, and when I was forced to do so, I couldn’t stop thinking about it. Shinner’s warm and funny voice, along with her immense, enquiring, humane intelligence make the essays in this book — which concern identity, mortality, romantic and filial love, gender — a surpassing intellectual gem that entertains and engages readers with every single word. I adored this book.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Christine Sneed</span>, author of <span class="italic">Little Known Facts and Portraits of a Few of the People I’ve Made Cry</span></li></ul>
+					</blockquote>
+
+					<!-- CHICAGO TRIBUNE -->
+					<blockquote class="rule-below">
+						<p>“smart, witty, bittersweet”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Chicago Tribune / Printers Row Journal</span></li></ul>
+					</blockquote>
+
+					<!-- THE BOSTON GLOBE -->
+					<blockquote class="rule-below">
+						<p>“These essays, even when the topics are ugly, shimmer with Shinner’s intelligence, honesty, and humor.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">The Boston Globe</span></li></ul>
+					</blockquote>
+
+					<!-- THE AUSTRALIAN -->
+					<blockquote class="rule-below">
+						<p>“the best kind of personal essay: one that flows outwards from the suffused intimate into the pervaded universal.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">The Australian</span></li></ul>
+					</blockquote>
+
+					<!-- REVIEW 31 -->
+					<blockquote class="rule-below">
+						<p>“Shinner applies her scalpel”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Review 31</span></li></ul>
+					</blockquote>
+
+					<!-- COLORADO REVIEW -->
+					<blockquote class="rule-below">
+						<p>“Shinner’s twelve remarkable essays are anything but the usual fare, instead taking as her subject the complicated relationship between our bodies and our souls.”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">Colorado Review</span></li></ul>
+					</blockquote>
+
+					<!-- RIVER TEETH -->
+					<blockquote>
+						<p>“story-telling that is starkly funny and tender”</p>
+						<ul><li><span class="em-dash-adjust">–</span>—&thinsp;<span class="reviewer-name">River Teeth</span></li></ul>
+					</blockquote>
+				</section>
+			</main>
+
+			<!-- FOOTER -->
+			<footer>
+				<ul>
+					<li>© 2026 Peggy Shinner. All Rights Reserved.</li>
+				</ul>
+			</footer>
+		</div>
+		<!-- END Page Wrapper -->
+	</body>
+</html>
