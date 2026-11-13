@@ -434,7 +434,7 @@ body {
 =light gray underline */
 .events .event-name a {
  display: inline-block; /* updated 26.11.09 */
- padding-bottom: 0.5rem;
+ padding-bottom: 0.3rem;
  position: relative; /* create a new positioning context for positioning the animated orange underline */
 
  background-image: linear-gradient(var(--gray-xx-light), var(--gray-xx-light));
