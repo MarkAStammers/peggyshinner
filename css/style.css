@@ -190,10 +190,16 @@ header .inn-wrapper {
  margin-top: 7.8rem;
  border-bottom: var(--rule-gray-light);
  overflow: hidden;
- position: relative; /* create a new positioning context for the pseudo element */
-
- background-size: cover;
- background-repeat: no-repeat;
+}
+.img-banner img {
+ height: 100%;
+ object-fit: cover;
+}
+.img-banner.a-sinking-ship img {
+ object-position: center 53%;
+}
+.img-banner.chicago-nightscene img {
+ object-position: center 60%;
 }
 /*
 =medium & below */
@@ -202,20 +208,6 @@ header .inn-wrapper {
  height: 6.6rem;
  margin-top: 6.6rem;
 }
-}
-.a-sinking-ship {
- background-image: url(../images/a-sinking-ship-in-the-sea_purple3.jpg);
- background-position: center 53%;
-}
-.a-sinking-ship::after {
- background-color: rgb(255 255 255 / 0.1);
- content: "";
- position: absolute;
- inset: 0;
-}
-.night-scene {
- background-image: url(../images/chicago-nightscene.jpg);
- background-position: center 60%;
 }
 
 /* 
