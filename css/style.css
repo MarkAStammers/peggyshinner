@@ -1,6 +1,6 @@
 /*
-=Sketch 14
-=Updated: 26.10.26 */
+=Style
+=Updated: 26.11.14 */
 
 /*
 =Global
@@ -195,12 +195,8 @@ header .inn-wrapper {
  height: 100%;
  object-fit: cover;
 }
-.img-banner.a-sinking-ship img {
- object-position: center 53%;
-}
-.img-banner.chicago-nightscene img {
- object-position: center 60%;
-}
+.img-banner.a-sinking-ship img     { object-position: center 53%; }
+.img-banner.chicago-nightscene img { object-position: center 60%; }
 /*
 =medium & below */
 @media (max-width: 991.98px) {
@@ -220,7 +216,7 @@ header .inn-wrapper {
  margin: 0 auto;
 }
 @media (max-width: 991.98px) {
-.pge-wrapper.mh-adjust {
+.pge-wrapper.mh-adjust { 
  min-height: calc(100vh - 13.2rem); /* subtract the image banner's combined top margin and height */
 }
 }
