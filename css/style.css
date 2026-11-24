@@ -1,6 +1,6 @@
 /*
 =Style
-=Updated: 26.11.14 */
+=Updated: 26.11.24 */
 
 /*
 =Global
@@ -98,16 +98,18 @@ body {
 }
 }
 /*
-=heading 2 > homepage, events */
+=heading 2 > homepage, events, news */
 .homepage .head-2,
-.events   .head-2 {
+.events   .head-2,
+.news     .head-2 {
  padding-top: 11.65rem;
 }
 /*
 =medium & below */
 @media (max-width: 991.98px) {
 .homepage .head-2,
-.events   .head-2 {
+.events   .head-2,
+.news     .head-2 {
  padding-top: 9.35rem;
 }
 }
@@ -119,7 +121,8 @@ body {
  border-bottom: var(--rule-gray-light);
  margin-bottom: 1.25rem;
 }
-.events .head-3 {
+.events .head-3,
+.news   .head-3 {
  margin-top: 3.9rem;
 }
 .events .head-3.location {
@@ -389,9 +392,10 @@ body {
 }
 
 /*
-=Events
+=Events + News
 ============================================= */
-.events .event-date {
+.events .event-date,
+.news .news-date {
  color: var(--orange-dark);
  letter-spacing: 0.05rem;
 }
@@ -404,19 +408,21 @@ body {
 }
 /*
 =light gray underline */
-.events .event-name a {
+.events .event-name a,
+.news .news-story a {
  display: inline-block; /* updated 26.11.09 */
  padding-bottom: 0.3rem;
  position: relative; /* create a new positioning context for positioning the animated orange underline */
 
- background-image: linear-gradient(var(--gray-xx-light), var(--gray-xx-light));
+ background-image: linear-gradient(var(--gray-x-light), var(--gray-x-light));
  background-position: 0 bottom; /* x y */
  background-size: 100% 0.1rem; /* width height */ /* updated 26.11.09 */
  background-repeat: no-repeat;
 }
 /*
 =animated orange underline */
-.events .event-name a::after {
+.events .event-name a::after,
+.news .news-story a::after {
  content: "";
  width: 100%; /* updated 26.11.09 */
  height: 0.1rem;
@@ -429,12 +435,13 @@ body {
  background-size: 0 0.1rem;
  background-repeat: no-repeat;
 }
-.events .event-name a:hover::after {
+.events .event-name a:hover::after,
+.news .news-story a:hover::after {
  background-size: 100% 0.1rem;
 }
 /*
 =bottom rule separating the events */
-.events ul.rule-below {
+.events .rule-below {
  border-bottom: var(--rule-gray-light);
  padding-bottom: 1.25rem;
  margin-bottom: 1.25rem;
@@ -446,7 +453,6 @@ body {
 .contact .publicist,
 .contact .agent {
  font-weight: 600;
- /* font-size: 1.45rem; */
  font-size: 1.375rem;
  text-transform: uppercase;
  letter-spacing: 0.25rem;
@@ -589,9 +595,6 @@ a {
 /*
 Classes
 ============================================= */
-.italic {
- font-style: italic;
-}
 .long-dash {
  letter-spacing: -0.1rem;
 }
@@ -607,6 +610,12 @@ Classes
 }
 .fs-normal {
  font-style: normal;
+}
+.fs-italic { /* updated 26.11.24 */
+ font-style: italic;
+}
+.fw-600 { /* added 26.11.24 */
+  font-weight: 600;
 }
 .ls-05 {
  letter-spacing: 0.05rem;
