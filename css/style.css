@@ -615,8 +615,11 @@ Classes
 .fs-italic { /* updated 26.11.24 */
  font-style: italic;
 }
+.fw-500 {
+ font-weight: 500;
+}
 .fw-600 { /* added 26.11.24 */
-  font-weight: 600;
+ font-weight: 600;
 }
 .ls-05 {
  letter-spacing: 0.05rem;
